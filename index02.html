@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>20220811 - 18</title>
+    <style>
+      table
+      {
+        display: inline-block;
+      }
+    </style>
+</head>
+<body>
+    <script lang="javascript">
+        function tabuada(...args) 
+        {
+          for (const number of args) 
+          {
+            construirTabuada(number);
+          }
+        }
+        
+        function construirTabuada(numero) 
+        {
+          let color_tr; 
+
+          document.write("<table border='1px' style='margin: 30px'>");
+
+          color_tr = "#ccc";
+          document.write("<tr style='background-color: " + color_tr + "'><td>Multiplicando</td><td>Resultado</td></tr>");
+
+          for (let i = 1; i <= 10; i++) 
+          {
+            document.write("<tr><td>" + i + "</td><td>" + i * numero + "</td></tr>");
+          }
+
+            document.write("</table>"); 
+          }
+
+
+tabuada(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+
+    </script>
+</body>
+</html>
